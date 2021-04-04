@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SMIT TUTORIALS</title>
+	<style>
+
+		.header{
+			
+			background-color: lightblue;
+			text-align: center;
+			text-shadow:5px 5px 10px red;
+		}
+		
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background-color: #333;
+
+		}
+		li{
+			float: left;
+
+		}
+		li a{
+			display: lnline-block;
+			color: white;
+			text-align: center;
+			padding-right: 153px;
+			padding-left: 153px;
+
+			text-decoration: none;
+		}
+		li a:hover {
+         background-color: #111;
+
+		}
+		.a1{
+			background-color: red;
+			text-align: center;
+		}
+		.a2{
+			background-color: red;
+		}
+		.a3{
+			background-color: red;
+
+		}
+		.a4{
+			background-color: red;
+		}
+		.header1{
+			text-align: center;
+		}
+
+		body {
+  font-family: "Lato", sans-serif;
+  background-color: #001f;
+ 
+ }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 40px;
+  text-decoration: underline;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  background-color: black;
+  overflow: hidden;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.content:hover{
+	background-color: gray;
+	display: block;
+}
+
+img:{
+	border: 0.5px solid #ffff;
+	border-radius: 1px;
+	width: 570px;
+}
+#myButton1 , #myButton2 , #myButton3 , #myvideo , #myvideo1 , #myvideo2{
+	background-color: #025914;
+	color: white;
+}
+
+
+#myButton1:hover{
+	background-color: lime;
+	color: black;
+
+}
+
+#myButton2:hover {
+	background-color: lime;
+	color: black;
+}
+
+#myButton3:hover {
+	background-color: lime;
+	color: black;
+}
+#myvideo:hover , #myvideo1:hover , #myvideo2:hover{
+	background-color: lime;
+	color: black;
+}
+
+.ad
+{
+	color: white;
+
+
+}
+
+	</style>
+</head>
+<body>
+	<div class="header" style="background-image: url('logo.png'); background-position: center;">
+		<h1>            
+        Welcome to smit tutorial
+
+		</h1>
+	</div>
+	
+<div class="header1">
+<ul> <! add some links>
+  <li><a href="smitutorials.html" class="a1">Home</a></li>
+  <li><a href="https://www.accenture.com/in-en/insights/technology/technology-trends-2021?c=acn_in_technologyvisiogoogle_11976909&n=psgs_0221&gclid=Cj0KCQiAs5eCBhCBARIsAEhk4r7_0n-y9aaz_SUdmrANVLrtETp4uRbojbYCmUUxGSEFrV549Xc1o-EaAoTFEALw_wcB&gclsrc=aw.ds" class="a2">News</a></li>
+  <li><a href="C:\xampp\htdocs\colorlib-regform-23\contus.html" class="a3">Contact</a></li>
+  <li><a href="about.html" class="a4">About</a></li>
+</ul>
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="about.html">About</a>
+  <a href="content.html">HTML-INTRODUCTION</a>
+  <a href="content1.html">CSS</a>
+  <a href="content2.html">JAVASCRIPT</a>
+  <a href="feedback.html">Feedback</a>
+</div>
+
+
+
+<span style="font-size:30px;cursor:pointer;color: white" onclick="openNav()">&#9776; Navigation</span>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class="content" style="padding-left: 500px">
+	<h1 id="content" style="color: white;">HTML-INTRODUCTION</h1>
+
+	
+​
+
+</div>
+<div style="padding-left: 350px; background: none !important; display: block;">
+	<h3 style="color: white">Example:</h3>
+	<img src="images\con1.png">
+	<p style="color: white;"><b>Make your own website by learning html.</b></p>
+	<button id="myButton1">Start Learning</button>  &nbsp; &nbsp; &nbsp;
+	<button id="myvideo">Video Lecture</button>
+	
+	<script type="text/javascript">
+document. getElementById("myButton1"). onclick = function () {
+location. href = "content.html";
+};
+</script>
+<script type="text/javascript">
+document. getElementById("myvideo"). onclick = function () {
+location. href = "videolec.html";
+};
+</script>
+</div>
+<div class="content" style="padding-left: 500px">
+	<h1 id="content" style="color: white;">CSS</h1>
+
+</div>
+<div style="padding-left:350px; background: none !important; display: block;">
+	<h3 style="color: white">Example:</h3>
+	<img src="images\con2.png">
+	<p style="color: white;"><b>Add styling on your website and start making your website attractive.</b></p>
+	<button id="myButton2">Start Learning</button> &nbsp; &nbsp; &nbsp;
+	<button id="myvideo1">Video Lecture</button>
+	<script type="text/javascript">
+document. getElementById("myButton2"). onclick = function () {
+location. href = "content1.html";
+};
+</script>
+
+<script type="text/javascript">
+document. getElementById("myvideo1"). onclick = function () {
+location. href = "videolec1.html";
+};
+</script>
+
+</div>
+<div class="ad">
+	<h5>ADVERTISEMENT</h5>
+	<a href="https://www.amazon.in/ASIAN-Bouncer-01-Stylish-Sneakers-Lightweight/dp/B08H12NBVH/ref=sr_1_1_sspa?dchild=1&keywords=shoes&qid=1610877208&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExQkVLNVQwUEhGQTYzJmVuY3J5cHRlZElkPUEwMTMxNjgyWEUxSUZEVFhNMVhOJmVuY3J5cHRlZEFkSWQ9QTAzNzY0NDMyV1dHRFMxRzlLM0UxJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ=="><img width="100" height="100" border="1px" src="images\shoes.png"></a> <br> <h10>Best Party wear shoes</h10>
+</div>
+
+
+<div class="content" style="padding-left: 500px">
+	<h1 id="content" style="color: white;">JAVA SCRIPT</h1>
+
+</div>
+
+<div style="padding-left:350px; background: none !important; display: block;">
+	<h3 style="color: white">Example:</h3>
+	<img src="images\con3.png">
+	<p style="color: white;"><b>Make your website responsive by using JavaScript in your website.</b></p>
+	<button id="myButton3">Start Learning</button> &nbsp; &nbsp; &nbsp;
+    <button id="myvideo2">Video Lecture</button>
+	<script type="text/javascript">
+document. getElementById("myvideo2"). onclick = function () {
+location. href = "videolec2.html";
+};
+</script>
+<script type="text/javascript">
+document. getElementById("myButton3"). onclick = function () {
+location. href = "content2.html";
+};
+</script>
+
+</div>
+
+
+<footer style="color: white;"> credits @smit&Princy</footer>
+
+</body>
+</html>

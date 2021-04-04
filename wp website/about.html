@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us</title>
+	<style>
+		@import url(https://fonts.googleapis.com/css?family=Quicksand:500);
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #001f3f;
+}
+
+p {
+  font-size: 1.3em;
+  text-align: center;
+  margin: 0.6em;
+  color: #4ccdff;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 2em;
+  color: #001f3f;
+  margin: 0.5em auto;
+  width: 180px;
+  text-align: center;
+}
+ul li {
+  display: block;
+  padding: 0.2em 0;
+  margin-bottom: 0.2em;
+  position: relative;
+  cursor: pointer;
+  background-color: #7fdbff;
+  border: 1px solid #111111;
+  text-align: center;
+}
+ul li hr {
+  border: 0;
+  border-top: 3px solid #001f3f;
+  width: 0;
+  position: absolute;
+  top: 82%;
+  margin: 0;
+  transition: width 0.5s ease-out;
+  -webkit-transition: width 0.5s ease-out;
+}
+ul li:first-child:hover hr {
+  width: 100%;
+}
+ul li:nth-child(2):hover hr {
+  animation: left-right 2s ease-in infinite;
+  -webkit-animation: left-right 2s ease-in infinite;
+}
+ul li:nth-child(3):hover hr {
+  width: 50%;
+  animation: bounce 1.5s 0.5s ease-out infinite;
+  -webkit-animation: bounce 1.5s 0.5s ease-out infinite;
+}
+ul li:nth-child(4) hr {
+  left: 50%;
+}
+ul li:nth-child(4):hover hr {
+  animation: double 2s 0.5s ease-out infinite;
+  -webkit-animation: double 2s 0.5s ease-out infinite;
+}
+ul li:last-child hr {
+  right: 0;
+}
+ul li:last-child:hover hr {
+  animation: slide 0.7s ease-out infinite;
+  -webkit-animation: slide 0.7s ease-out infinite;
+}
+
+@keyframes left-right {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes bounce {
+  0% {
+    left: 0;
+  }
+  48% {
+    left: 50%;
+  }
+  50% {
+    left: 50%;
+  }
+  98% {
+    left: 0;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes double {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+  80% {
+    width: 0;
+    left: 50%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes slide {
+  0% {
+    width: 0;
+  }
+  30% {
+    width: 50%;
+    right: 0;
+  }
+  60% {
+    width: 50%;
+    right: 50%;
+  }
+  90% {
+    width: 0;
+    right: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+div{
+	font-family: "Quicksand", sans-serif;
+  background-color: #001f3f;
+  padding-top: 100px;
+  padding-left: 200px;
+  color: cyan;
+}
+</style>
+<h2> <P>Smit Tutorial is noe of the quick learner for Web developement.<br>
+We have some scpriting language & programming language
+</P></h2>
+<ul>
+  <li>HTML<hr></li>
+  <li>CSS<hr></li>
+  <li>JAVA-SCPRIT<hr></li>
+</ul>
+
+<h3><p><u>Here we also provide certificate from a course after completing.</u></p></h3>
+<div><footer><strong><p><h2>This website has been made by Smit Jaiswal[<b>190303108713</b>] and Princy Tripathi[<b>180303108141</b>].</h2></p></strong></center></footer></div>
+
+</body>
+</html>
